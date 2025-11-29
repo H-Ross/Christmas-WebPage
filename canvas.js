@@ -19,7 +19,7 @@ let h = canvas.height;
 
 const ctx = canvas.getContext('2d');
 const backgroundImage = new Image();
-backgroundImage.src = "./images/Stockholm-Winter.jpg";
+backgroundImage.src = "./images/sthlm_3.jpg";
 
 const flakes = [];
 class Snowfall {
@@ -73,57 +73,57 @@ function updateContent() {
     }
     else {
         const imageUrls = [
-            "./images/1_KarlBertilJonsson.jpg",
-            "./images/2_Elf.jpg",
-            "./images/3_ChristmasDrop.jfif",
-            "./images/4_ChristmasChronicles.jpg",
-            "./images/5_Noelle.jpg",
-            "./images/6_ABoyCalledChristmas.png",
-            "./images/7_Tomtenärfar.jpg",
-            "./images/8_HomeAlone.jpg",
-            "./images/9_HomeAlone2.jfif",
-            "./images/10_AChristmasStory.jfif",
-            "./images/11_DieHard.jfif",
-            "./images/12_Holiday.jpg",
-            "./images/13_theSantaClause.jfif",
-            "./images/14_LoveActually.jpg",
-            "./images/15_Snowroller.jfif",
-            "./images/16_ChristmasVacation.jfif",
-            "./images/17_JagKommerHemIgenTillJul.jfif",
-            "./images/18_Scrooge.jpg",
-            "./images/19_EnUnderbarJävlaJul.jpg",
-            "./images/20_CharlieBrownsChristmas.jfif",
-            "./images/21_ChristmaswiththeKRanks.jpg",
-            "./images/22_Grinch.jpg",
-            "./images/23_theNightBefore.jfif",
-            "./images/24_SaganomKarl-BertilJonssonsJulafton.jpg"
+            "./images/1_ChristmasDrop.jpg",
+            "./images/2_theHoliday.jpg",
+            "./images/3_Tomtenärfar.jpg",
+            "./images/4_Holidate.jpg",
+            "./images/5_ABoyCalledChristmas.png",
+            "./images/6_theSantaClause.jpg",
+            "./images/7_Noelle.jpg",
+            "./images/8_Grinch.jpg",
+            "./images/9_ChristmasChronicles.jpg",
+            "./images/10_GodjulSvensson.jpg",
+            "./images/11_HauloftheHolly.jpg",
+            "./images/12_LoveActually.jpg",
+            "./images/13_EnUnderbarJävlaJul.jpg",
+            "./images/14_HomeAlone2.jpg",
+            "./images/15_theFamilyStone.jpg",
+            "./images/16_Mupparnas julsaga.jpg",
+            "./images/17_EnLysandejul.jpg",
+            "./images/18_SåBlevDetJulIgen.jpg",
+            "./images/19_HolidayInTheWild.jpg",
+            "./images/20_AChristmasCarol.jpg",
+            "./images/21_theHolidayCalandar.jpg",
+            "./images/22_DieHard.jpg",
+            "./images/23_JagKommerHemIgenTillJul.jpg",
+            "./images/24_KarlBertilJonsson.jpg"
         ];
 
         const moviePlatforms = [
             "Netflix",
+            "Disney+",
+            "Netflix",
+            "Netflix",
+            "Netflix+",
+            "Disney+",
+            "Disney+",
+            "Disney+",
+            "Netflix",
+            "Svtplay",
             "Netflix",
             "Netflix",
             "Netflix",
             "Disney+",
             "Netflix",
-            "Netflix",
             "Disney+",
             "Disney+",
-            "Find Online",
+            "Netflix",
+            "Netflix",
             "Disney+",
-            "TV4+",
+            "Netflix",
             "Disney+",
             "Netflix",
-            "TV4+",
-            "Find Online",
-            "TV4+",
-            "Netflix",
-            "Netflix",
-            "Find Online",
-            "Find Online",
-            "Netflix",
-            "Netflix",
-            "SVT Play"
+            "Netflix"
         ];
 
         // Set the advent count
@@ -166,20 +166,20 @@ function updateContent() {
         // Clear previous content
         dailyPlatform.innerHTML = '';
 
-        if (platform === "Find Online") {
-            let site = '';
-            if (currentDay === 10)
-                site = 'https://www.dailymotion.com/video/x8cmcx1';
-            else if (currentDay === 16)
-                site = '';
-            else if (currentDay === 20)
-                site = 'https://archive.org/details/a-charlie-brown-christmas-original-version/A+Charlie+Brown+Christmas+Remastered+(Sort+of).mp4';
-            else if (currentDay === 21)
-                site = 'https://www.dailymotion.com/video/x82evr8';
-            dailyPlatform.innerHTML = `<a href='${site}' target='_blank'>Click Here</a>`;
-        } else {
-            dailyPlatform.textContent = platform;
-        }
+        // if (platform === "Find Online") {
+        //     let site = '';
+        //     if (currentDay === 10)
+        //         site = 'https://www.dailymotion.com/video/x8cmcx1';
+        //     else if (currentDay === 16)
+        //         site = '';
+        //     else if (currentDay === 20)
+        //         site = 'https://archive.org/details/a-charlie-brown-christmas-original-version/A+Charlie+Brown+Christmas+Remastered+(Sort+of).mp4';
+        //     else if (currentDay === 21)
+        //         site = 'https://www.dailymotion.com/video/x82evr8';
+        //     dailyPlatform.innerHTML = `<a href='${site}' target='_blank'>Click Here</a>`;
+        // } else {
+        //     dailyPlatform.textContent = platform;
+        // }
 
     }
 
