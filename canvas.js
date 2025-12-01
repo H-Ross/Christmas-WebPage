@@ -84,7 +84,7 @@ function updateContent() {
             "./images/9_ChristmasChronicles.jpg",
             "./images/10_GodjulSvensson.jpg",
             "./images/11_HauloftheHolly.jpg",
-            "./images/12_LoveActually.jpg",
+            "./images/12_FannyoAlexander.jpg",
             "./images/13_EnUnderbarJävlaJul.jpg",
             "./images/14_HomeAlone2.jpg",
             "./images/15_theFamilyStone.jpg",
@@ -111,7 +111,7 @@ function updateContent() {
             "Netflix",
             "Svtplay",
             "Netflix",
-            "Netflix",
+            "Svtplay",
             "Netflix",
             "Disney+",
             "Netflix",
@@ -178,7 +178,7 @@ function updateContent() {
         //         site = 'https://www.dailymotion.com/video/x82evr8';
         //     dailyPlatform.innerHTML = `<a href='${site}' target='_blank'>Click Here</a>`;
         // } else {
-        //     dailyPlatform.textContent = platform;
+        dailyPlatform.textContent = platform;
         // }
 
     }
